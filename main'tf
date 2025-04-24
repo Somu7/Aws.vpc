@@ -1,1 +1,5 @@
-this is a terraform file
+module "VPC" {
+    source          = ""
+    name            =var.name
+    environment     = var.environment
+}
