@@ -1,1 +1,3 @@
-it is second file 
+provider "aws" {
+  region = var.region
+}

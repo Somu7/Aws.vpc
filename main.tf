@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-this is a w terraform file
-=======
-module "VPC" {
-    source          = "https://github.com/Somu7/module.vpc.git?ref=development"
-    name            =var.name
-    environment     = var.environment
+module "vpc" {
+  source      = "git::git@github.com:Somu7/module.vpc.git"
+  region      = var.region
+  vpc_cidr    = var.vpc_cidr
+  subnet_cidr = var.subnet_cidr
+  tags        = var.tags
 }
->>>>>>> e7ab12f (added the new file)
