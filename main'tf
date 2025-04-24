@@ -1,5 +1,0 @@
-module "VPC" {
-    source          = ""
-    name            =var.name
-    environment     = var.environment
-}
